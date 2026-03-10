@@ -3,9 +3,9 @@
 
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
-<title>Empresa de Engenharia | BIM e Projetos</title>
+<title>Consultoria BIM | Engenharia</title>
 
 <style>
 
@@ -13,12 +13,13 @@ body{
 margin:0;
 font-family:Arial, Helvetica, sans-serif;
 background:#f5f7fa;
+color:#333;
 }
 
 header{
 background:#0f172a;
 color:white;
-padding:20px 40px;
+padding:20px 60px;
 display:flex;
 justify-content:space-between;
 align-items:center;
@@ -37,21 +38,27 @@ font-weight:bold;
 }
 
 .hero{
-background:linear-gradient(120deg,#1e3a8a,#2563eb);
+background:url("https://images.unsplash.com/photo-1581092160607-ee22621dd758") center/cover;
 color:white;
-padding:100px 20px;
+padding:140px 20px;
 text-align:center;
 }
 
 .hero h2{
-font-size:40px;
+font-size:42px;
 margin-bottom:20px;
+}
+
+.hero p{
+font-size:18px;
+max-width:600px;
+margin:auto;
 }
 
 .container{
 max-width:1100px;
 margin:auto;
-padding:60px 20px;
+padding:80px 20px;
 }
 
 .services{
@@ -64,31 +71,44 @@ gap:30px;
 background:white;
 padding:30px;
 border-radius:10px;
-box-shadow:0 5px 20px rgba(0,0,0,0.08);
+box-shadow:0 10px 25px rgba(0,0,0,0.08);
 }
 
 .card h3{
 margin-top:0;
+color:#1e3a8a;
 }
 
-.portfolio{
+.section-dark{
+background:#0f172a;
+color:white;
+}
+
+.benefits{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:30px;
 }
 
-.project{
-background:#ddd;
-height:180px;
-border-radius:8px;
-display:flex;
-align-items:center;
-justify-content:center;
-font-weight:bold;
-}
-
-.contact{
+.cta{
 text-align:center;
+}
+
+.cta button{
+background:#2563eb;
+border:none;
+color:white;
+padding:15px 30px;
+font-size:16px;
+border-radius:6px;
+cursor:pointer;
+}
+
+footer{
+background:#020617;
+color:white;
+text-align:center;
+padding:30px;
 }
 
 .whatsapp{
@@ -101,14 +121,7 @@ padding:15px 20px;
 border-radius:50px;
 text-decoration:none;
 font-weight:bold;
-box-shadow:0 5px 15px rgba(0,0,0,0.3);
-}
-
-footer{
-background:#0f172a;
-color:white;
-text-align:center;
-padding:30px;
+box-shadow:0 5px 20px rgba(0,0,0,0.3);
 }
 
 </style>
@@ -117,77 +130,117 @@ padding:30px;
 <body>
 
 <header>
-<h1>Empresa de Engenharia</h1>
+
+<h1>Consultoria BIM</h1>
 
 <nav>
-<a href="#">Início</a>
-<a href="#">Serviços</a>
-<a href="#">Projetos</a>
-<a href="#">Contato</a>
+<a href="#servicos">Serviços</a>
+<a href="#beneficios">Benefícios</a>
+<a href="#contato">Contato</a>
 </nav>
+
 </header>
 
 <section class="hero">
-<h2>Soluções em Engenharia e BIM</h2>
-<p>Projetos, modelagem BIM e consultoria técnica</p>
+
+<h2>Consultoria e Implementação BIM</h2>
+
+<p>
+Transforme seus projetos de engenharia com modelagem BIM,
+compatibilização e gestão inteligente de projetos.
+</p>
+
 </section>
 
 <section class="container">
+
+<h2>Sobre o Serviço</h2>
+
+<p>
+A metodologia BIM permite integrar disciplinas de engenharia,
+reduzir erros de projeto e melhorar o planejamento de obras.
+Nossa consultoria ajuda empresas e profissionais a implementar
+BIM de forma eficiente em seus projetos.
+</p>
+
+</section>
+
+<section id="servicos" class="container">
 
 <h2>Serviços</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>Projetos de Engenharia</h3>
-<p>Desenvolvimento de projetos técnicos multidisciplinares.</p>
-</div>
-
-<div class="card">
 <h3>Modelagem BIM</h3>
-<p>Modelagem e compatibilização utilizando metodologia BIM.</p>
+<p>Criação de modelos BIM para arquitetura, estrutura e instalações.</p>
 </div>
 
 <div class="card">
-<h3>Consultoria Técnica</h3>
-<p>Suporte técnico, planejamento e gestão de projetos.</p>
+<h3>Compatibilização</h3>
+<p>Detecção de interferências e coordenação entre disciplinas.</p>
+</div>
+
+<div class="card">
+<h3>Consultoria BIM</h3>
+<p>Implementação da metodologia BIM em empresas e projetos.</p>
+</div>
+
+<div class="card">
+<h3>Planejamento 4D</h3>
+<p>Integração do modelo BIM com cronogramas de obra.</p>
 </div>
 
 </div>
 
 </section>
 
-<section class="container">
+<section id="beneficios" class="container section-dark">
 
-<h2>Projetos</h2>
+<h2>Benefícios do BIM</h2>
 
-<div class="portfolio">
+<div class="benefits">
 
-<div class="project">Projeto 1</div>
-<div class="project">Projeto 2</div>
-<div class="project">Projeto 3</div>
+<div>
+<h3>Redução de erros</h3>
+<p>Identificação de interferências antes da obra.</p>
+</div>
+
+<div>
+<h3>Maior eficiência</h3>
+<p>Melhor integração entre equipes e disciplinas.</p>
+</div>
+
+<div>
+<h3>Economia de custos</h3>
+<p>Menos retrabalho e maior previsibilidade.</p>
+</div>
 
 </div>
 
 </section>
 
-<section class="container contact">
+<section id="contato" class="container cta">
 
-<h2>Contato</h2>
+<h2>Solicite um Orçamento</h2>
 
-<p>Email: contato@suaempresa.com</p>
+<p>Entre em contato para discutir seu projeto.</p>
+
+<button onclick="window.location.href='https://wa.me/5511999999999'">
+Falar no WhatsApp
+</button>
 
 </section>
+
+<footer>
+
+<p>© 2026 Consultoria BIM</p>
+
+</footer>
 
 <a class="whatsapp" href="https://wa.me/5511999999999">
 WhatsApp
 </a>
-
-<footer>
-
-<p>© 2026 Empresa de Engenharia</p>
-
-</footer>
 
 </body>
 </html>
