@@ -1,47 +1,116 @@
 <!DOCTYPE html>
-<html>
+<html lang="pt-br">
+
 <head>
-<title>Minha Empresa de Engenharia</title>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Empresa de Engenharia | BIM e Projetos</title>
 
 <style>
+
 body{
-font-family: Arial;
 margin:0;
+font-family:Arial, Helvetica, sans-serif;
+background:#f5f7fa;
 }
 
 header{
 background:#0f172a;
 color:white;
-padding:40px;
+padding:20px 40px;
+display:flex;
+justify-content:space-between;
+align-items:center;
+}
+
+header h1{
+margin:0;
+font-size:20px;
+}
+
+nav a{
+color:white;
+margin-left:20px;
+text-decoration:none;
+font-weight:bold;
+}
+
+.hero{
+background:linear-gradient(120deg,#1e3a8a,#2563eb);
+color:white;
+padding:100px 20px;
 text-align:center;
 }
 
-section{
-padding:40px;
-max-width:900px;
+.hero h2{
+font-size:40px;
+margin-bottom:20px;
+}
+
+.container{
+max-width:1100px;
 margin:auto;
+padding:60px 20px;
 }
 
 .services{
 display:grid;
-grid-template-columns:1fr 1fr 1fr;
-gap:20px;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:30px;
 }
 
 .card{
-background:#f4f4f4;
-padding:20px;
+background:white;
+padding:30px;
+border-radius:10px;
+box-shadow:0 5px 20px rgba(0,0,0,0.08);
+}
+
+.card h3{
+margin-top:0;
+}
+
+.portfolio{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+gap:20px;
+}
+
+.project{
+background:#ddd;
+height:180px;
 border-radius:8px;
+display:flex;
+align-items:center;
+justify-content:center;
+font-weight:bold;
+}
+
+.contact{
+text-align:center;
+}
+
+.whatsapp{
+position:fixed;
+bottom:25px;
+right:25px;
+background:#25D366;
+color:white;
+padding:15px 20px;
+border-radius:50px;
+text-decoration:none;
+font-weight:bold;
+box-shadow:0 5px 15px rgba(0,0,0,0.3);
 }
 
 footer{
 background:#0f172a;
 color:white;
 text-align:center;
-padding:20px;
+padding:30px;
 }
+
 </style>
 </head>
 
@@ -49,44 +118,75 @@ padding:20px;
 
 <header>
 <h1>Empresa de Engenharia</h1>
-<p>Projetos | BIM | Consultoria</p>
+
+<nav>
+<a href="#">Início</a>
+<a href="#">Serviços</a>
+<a href="#">Projetos</a>
+<a href="#">Contato</a>
+</nav>
 </header>
 
-<section>
-<h2>Sobre</h2>
-<p>Empresa especializada em projetos de engenharia e modelagem BIM.</p>
+<section class="hero">
+<h2>Soluções em Engenharia e BIM</h2>
+<p>Projetos, modelagem BIM e consultoria técnica</p>
 </section>
 
-<section>
+<section class="container">
+
 <h2>Serviços</h2>
 
 <div class="services">
 
 <div class="card">
-<h3>Projetos</h3>
-<p>Desenvolvimento de projetos de engenharia.</p>
+<h3>Projetos de Engenharia</h3>
+<p>Desenvolvimento de projetos técnicos multidisciplinares.</p>
 </div>
 
 <div class="card">
-<h3>BIM</h3>
-<p>Modelagem BIM e compatibilização.</p>
+<h3>Modelagem BIM</h3>
+<p>Modelagem e compatibilização utilizando metodologia BIM.</p>
 </div>
 
 <div class="card">
-<h3>Consultoria</h3>
-<p>Consultoria técnica e planejamento.</p>
+<h3>Consultoria Técnica</h3>
+<p>Suporte técnico, planejamento e gestão de projetos.</p>
 </div>
 
 </div>
+
 </section>
 
-<section>
+<section class="container">
+
+<h2>Projetos</h2>
+
+<div class="portfolio">
+
+<div class="project">Projeto 1</div>
+<div class="project">Projeto 2</div>
+<div class="project">Projeto 3</div>
+
+</div>
+
+</section>
+
+<section class="container contact">
+
 <h2>Contato</h2>
+
 <p>Email: contato@suaempresa.com</p>
+
 </section>
+
+<a class="whatsapp" href="https://wa.me/5511999999999">
+WhatsApp
+</a>
 
 <footer>
+
 <p>© 2026 Empresa de Engenharia</p>
+
 </footer>
 
 </body>
