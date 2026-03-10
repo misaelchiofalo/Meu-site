@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Minha Empresa de Engenharia</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+body{
+font-family: Arial;
+margin:0;
+}
+
+header{
+background:#0f172a;
+color:white;
+padding:40px;
+text-align:center;
+}
+
+section{
+padding:40px;
+max-width:900px;
+margin:auto;
+}
+
+.services{
+display:grid;
+grid-template-columns:1fr 1fr 1fr;
+gap:20px;
+}
+
+.card{
+background:#f4f4f4;
+padding:20px;
+border-radius:8px;
+}
+
+footer{
+background:#0f172a;
+color:white;
+text-align:center;
+padding:20px;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+<h1>Empresa de Engenharia</h1>
+<p>Projetos | BIM | Consultoria</p>
+</header>
+
+<section>
+<h2>Sobre</h2>
+<p>Empresa especializada em projetos de engenharia e modelagem BIM.</p>
+</section>
+
+<section>
+<h2>Serviços</h2>
+
+<div class="services">
+
+<div class="card">
+<h3>Projetos</h3>
+<p>Desenvolvimento de projetos de engenharia.</p>
+</div>
+
+<div class="card">
+<h3>BIM</h3>
+<p>Modelagem BIM e compatibilização.</p>
+</div>
+
+<div class="card">
+<h3>Consultoria</h3>
+<p>Consultoria técnica e planejamento.</p>
+</div>
+
+</div>
+</section>
+
+<section>
+<h2>Contato</h2>
+<p>Email: contato@suaempresa.com</p>
+</section>
+
+<footer>
+<p>© 2026 Empresa de Engenharia</p>
+</footer>
+
+</body>
+</html>
